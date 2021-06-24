@@ -12,6 +12,7 @@ public class ValidatorArgumentFathTest {
 
     ArrayList<String> list = new ArrayList<>();
 
+    //подготовка тестового списка
     @Before
     public void getList () {
         list.add("A");
@@ -23,8 +24,9 @@ public class ValidatorArgumentFathTest {
         System.out.println(list);
     }
 
+    //тестирование метода исключающего дубли из списка параметров отбора записей в БД
     @Test
-    public void eliminationOfDuplicates() {
+    public void eliminationOfDuplicatesTest() {
         ValidatorArgumentFath validatorArgumentFath = new ValidatorArgumentFath();
         list = validatorArgumentFath.eliminationOfDuplicates(list);
         System.out.println(list);
