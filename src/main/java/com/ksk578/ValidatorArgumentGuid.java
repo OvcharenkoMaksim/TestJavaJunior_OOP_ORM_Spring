@@ -23,7 +23,7 @@ public class ValidatorArgumentGuid extends ValidatorArgumentFath {
             if (guid.length () == 36) {
                 list.add (guid);
             } else {
-                System.out.println ("Введите корректный guid");
+                System.out.println ("\nВведите корректный guid");
             }
         }
         if (list.size () == 0) {
